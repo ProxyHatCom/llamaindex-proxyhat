@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":semanticCommits"],
+  "labels": ["dependencies"],
+  "schedule": ["before 6am on monday"],
+  "packageRules": [
+    {
+      "description": "Auto-merge dev-dependency and upstream bumps once CI (incl. compat) is green.",
+      "matchDepTypes": ["dev-dependencies", "dependencies"],
+      "automerge": true,
+      "automergeType": "pr"
+    },
+    {
+      "description": "Track the llama-index-core range but never auto-widen it silently.",
+      "matchPackageNames": ["llama-index-core"],
+      "automerge": false
+    }
+  ]
+}
