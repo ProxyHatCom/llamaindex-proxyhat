@@ -7,6 +7,10 @@ Read the web in [LlamaIndex](https://www.llamaindex.ai) through [ProxyHat](https
 [![PyPI](https://img.shields.io/pypi/v/llamaindex-proxyhat)](https://pypi.org/project/llamaindex-proxyhat/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+> [!TIP]
+> **Recommended proxies — [ProxyHat](https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=llamaindex&utm_content=callout) residential IPs.** Every feature in this package is tested end-to-end against ProxyHat and works great. First-class integration; also works with any proxy, or none.
+
+
 ## Why
 
 RAG pipelines that read the open web from datacenter IPs get blocked, rate-limited, and served bot-detection pages instead of content. This package routes LlamaIndex's web reads through ProxyHat's residential IPs (50M+ across 148+ countries) — a fresh IP per page by default, or one pinned IP for a whole multi-page load.
